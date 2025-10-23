@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "Lista de Clientes e Fornecedores";
+}
+
+<div class="container mt-4">
+    <h2>Lista de Clientes</h2>
+    <table class="table table-hover table-sm table-bordered caption-top">
+        <thead class="table-dark">
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>CPF</th>
+                <th>Email</th>
+                <th>Paciente (Pet)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in @ViewBag.listaClientes)
+            {
+                <tr>
+                    <th scope="row">@item.Id</th>
+                    <td>@item.Nome</td>
+                    <td>@item.Cpf</td>
+                    <td>@item.Email</td>
+                    <td>@item.Paciente</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <h2>Lista de Fornecedores</h2>
+    <table class="table table-hover table-sm table-bordered caption-top">
+        <thead class="table-dark">
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>CNPJ</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in @ViewBag.listaFornecedores)
+            {
+                <tr>
+                    <th scope="row">@item.Id</th>
+                    <td>@item.Nome</td>
+                    <td>@item.Cnpj</td>
+                    <td>@item.Email</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
