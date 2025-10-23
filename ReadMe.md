@@ -16,7 +16,7 @@ Aplicação web desenvolvida em **.NET MVC**, simulando o sistema da clínica ve
 - Razor View Engine
 
 ## 📸 Exemplo de saída
-![Print do sistema](screenshot.png)
+![Print do sistema](screenshot1.png)
 
 ---
 
